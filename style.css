@@ -1,0 +1,427 @@
+/* Reset dasar untuk margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: white;
+    padding-top: 80px; /* Menambahkan jarak atas untuk body, agar konten tidak terhalang navbar */
+}
+
+/* Penataan untuk Navbar Brand */
+.navbar-brand a {
+    text-decoration: none;  /* Menghapus garis bawah pada link */
+    font-size: 30px;        /* Ukuran font teks */
+    font-weight: bold;      /* Menebalkan font */
+    color: #fff;            /* Warna teks */
+}
+
+.navbar-brand a:hover {
+    color: #f4b400;         /* Warna saat hover */
+    transition: color 0.3s ease;  /* Efek transisi warna */
+}
+
+/* Header/Navbar */
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 30px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #ffbb33;
+}
+
+/* Hero Section */
+.hero {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 20px; /* Jarak tambahan agar tidak tertutup navbar */
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.price-info p {
+    font-size: 24px;
+    color: #ffbb33;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ffbb33;
+    color: #111;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff8811;
+}
+
+/* About Section */
+.about {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 40px; /* Jarak atas tambahan agar lebih terpisah dari navbar */
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #ffbb33;
+}
+
+/* Alamat Section Styling */
+.address {
+    margin-top: 30px;
+}
+
+.address h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffbb33;
+    margin-top: 30px; /* Menambah jarak dari elemen di atasnya */
+}
+
+.address p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffbb33;
+    color: #111;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.map-link:hover {
+    background-color: #ff8811;
+}
+
+/* Services Section Styling (Harga) */
+.services-grid .service-item p strong {
+    font-weight: bold;
+    color: #ffbb33;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.services-grid .service-item p {
+    font-size: 16px;
+}
+
+/* Services Section */
+.services {
+    background-color: #333;
+    padding: 100px 20px 80px; /* Tambahkan padding-top lebih banyak agar ada ruang di atas */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffbb33;
+    font-weight: bold;
+    margin-top: 40px; /* Menambahkan margin atas untuk memberi ruang lebih dari navbar */
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-item {
+    background-color: #444;
+    padding: 40px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffbb33;
+    margin-top: 30px; /* Menambahkan margin atas untuk memberi ruang lebih */
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Free Delivery Info Styling */
+.free-delivery-info-minimal {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.delivery-icon {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.delivery-text h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffdd57; /* Warna kuning untuk judul */
+}
+
+.delivery-text p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #e0e0e0; /* Warna lebih terang untuk teks deskripsi */
+}
+
+.delivery-text p:hover {
+    color: #ffdd57; /* Mengubah warna teks saat hover */
+}
+
+/* Pricing Section Styling */
+.pricing {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.pricing p strong {
+    font-size: 22px;
+    color: #ffbb33;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px; /* Mengurangi margin bawah agar lebih dekat dengan kotak informasi */
+    line-height: 1.6;
+}
+
+/* Tombol CTA WhatsApp */
+.cta-button {
+    background-color: #ffbb33;
+    color: #111;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 30px; /* Memberikan jarak bawah setelah tombol */
+}
+
+.cta-button:hover {
+    background-color: #ff8811;
+}
+
+/* Kotak Informasi Kontak */
+.contact .contact-details {
+    background-color: #222; /* Background yang gelap */
+    padding: 20px; /* Spasi di dalam kotak */
+    border-radius: 10px; /* Sudut kotak melengkung */
+    color: #fff; /* Warna teks putih */
+    display: inline-block;
+    max-width: 500px; /* Lebar maksimal kotak */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan ringan untuk efek 3D */
+    margin-top: 20px; /* Mengurangi jarak atas agar lebih rapat dengan paragraf */
+}
+
+.contact .contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffbb33; /* Warna judul kuning */
+    border-bottom: 2px solid #ffbb33; /* Garis bawah untuk pemisah */
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact .contact-details ul {
+    list-style: none; /* Menghilangkan bullet list */
+    padding: 0;
+    font-size: 16px;
+}
+
+.contact .contact-details li {
+    margin-bottom: 10px; /* Jarak antar item list */
+    font-weight: normal;
+    color: #e0e0e0; /* Warna teks abu-abu terang */
+}
+
+.contact .contact-details a {
+    color: #ffbb33; /* Warna link kuning */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact .contact-details a:hover {
+    color: #ff8811; /* Warna link lebih gelap saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+    transition: color 0.3s ease;
+}
+
+/* Styling untuk layout tombol WhatsApp */
+.whatsapp-button {
+    text-align: center; /* Memastikan tombol WhatsApp berada di tengah */
+    margin-top: 20px; /* Memberikan jarak atas agar tombol tidak terlalu rapat dengan informasi */
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 16px;
+}
+
+.footer-content a {
+    color: #ffbb33;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-content a:hover {
+    color: #ff8811;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
